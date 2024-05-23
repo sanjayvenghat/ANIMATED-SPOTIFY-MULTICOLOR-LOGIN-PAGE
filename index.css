@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+.form{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    position: relative;
+    border-radius: 25px;
+    border: 1px solid pink;
+   
+}
+.form::before { 
+    content:'';
+    height: 400px;
+    width: 300px;
+    background: linear-gradient(rgb(11, 0, 128),pink);
+    animation:animation 3s linear 1s infinite alternate slidein;
+   
+} 
+.form::after{ 
+    content:'';
+    height: 400px;
+    width: 300px;
+    background: pink;
+    inset: 5px;
+    
+   
+}
+
+
+
+h1 {
+    color: rgb(15, 230, 15);
+    transform: translate(0, -55px);
+}
+
+p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    transform: translate(0, -75px);
+    top: 45px;
+}
+
+input {
+    transform: translate(0, -46px);
+    height: 35px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+div {
+    padding: 10px;
+}
+
+input[type="button"] {
+    color: black;
+    transform: translate(0, -15px);
+    background-color: green;
+    height: 35px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
